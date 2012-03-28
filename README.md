@@ -3,20 +3,13 @@ Async node module for uploading local/remote files over multipart.
 
 ## Install
 <pre>
-  npm install poster
+  $ npm install poster
 </pre>
 
-Or from source:
+## post(uri, options, callback[err, data])
 
-<pre>
-  git clone git://github.com/rfrench/poster.git 
-  cd poster
-  npm link
-</pre>
-
-## post(url, options, callback[err, data])
-
- - `uploadUrl`: Whether to follow redirects or not. Can be a number (of max redirects), `true` (which translates to 20) or `false` (default).
+### Options
+ - `uploadUrl`: Upload URL. (required)
  - `method`: HTTP method type. Defaults to `POST`.
  - `fileId`: File ID parameter name of the file. Defaults to `Filedata`.
  - `fields`: Optional form parameters.
@@ -72,7 +65,7 @@ poster.post('https://www.google.com/logos/2012/addams11-hp.jpg', options, functi
 
 ## BYOA (Bring Your Own Agent)
 <pre>
-  npm install tunnel
+  $ npm install tunnel
 </pre>
 
 ``` js
