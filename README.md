@@ -14,6 +14,7 @@ Async node module for uploading local/remote files over multipart.
  - `fileId`: File ID parameter name of the file. Defaults to `Filedata`.
  - `fields`: Optional form parameters.
  - `maxFileSize`: Maximum file size allowed to be uploaded in bytes. Disabled by default.
+ - 'downloadFileName': If supplied, this will override the parsed file name from the url.
  - `maxRedirects`: Total # of redirects allowed before giving up downloading the file. Defaults to `5`.
  - `downloadAgent`: Use your own http.Agent for downloading files. Defaults to the global agent.
  - `uploadAgent`: Use your own http.Agent for uploading files. Defaults to the global agent.
