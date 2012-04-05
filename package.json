@@ -1,0 +1,20 @@
+{
+		"name": "poster",
+		"author": "Ryan French <frenchrya@gmail.com>",
+		"version": "0.0.1",
+		"description": "node.js module for streaming local/remote files over multipart.",
+		"keywords": [
+			"upload", 
+			"multipart",
+			"POST"
+		],
+		"repository": {
+				"type": "git",
+				"url": "git://github.com/rfrench/poster.git"
+		},
+		"directories": {
+				"lib": "lib"
+		},
+		"main": "./index",
+		"engines" : ["node >= 0.4.7"]
+}
