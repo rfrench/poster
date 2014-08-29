@@ -19,6 +19,8 @@ Async node module for uploading local/remote files over multipart.
  - `downloadAgent`: Use your own http.Agent for downloading files. Defaults to the global agent.
  - `uploadAgent`: Use your own http.Agent for uploading files. Defaults to the global agent.
  - `agent`: If supplied, this value will use the same agent for both the downloadAgent and uploadAgent.
+ - `dontEscapeFields`: Don't escape `fields`
+ - `fileContentType`: overwrite file type content
 
 ## Examples
 
