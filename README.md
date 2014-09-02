@@ -14,6 +14,7 @@ Async node module for uploading local/remote files over multipart.
  - `fileId`: File ID parameter name of the file. Defaults to `Filedata`.
  - `fields`: Optional form parameters.
  - `maxFileSize`: Maximum file size allowed to be uploaded in bytes. Disabled by default.
+ - `fileContentType`: Content type of the file being uploaded. Defaults to 'application/octet-stream'.
  - `downloadFileName`: If supplied, this will override the parsed file name from the url.
  - `maxRedirects`: Total # of redirects allowed before giving up downloading the file. Defaults to `5`.
  - `downloadAgent`: Use your own http.Agent for downloading files. Defaults to the global agent.
@@ -30,6 +31,7 @@ var options = {
   uploadUrl: 'http://mysite.com/upload',
   method: 'POST',
   fileId: 'file',
+  fileContentType: 'image/jpeg'
   fields: {
     'myfield': 'value',
     'myfield2': 'value2'
