@@ -17,6 +17,9 @@ Async node module for uploading local/remote files over multipart.
  - `fileContentType`: Content type of the file being uploaded. Defaults to 'application/octet-stream'.
  - `downloadFileName`: If supplied, this will override the parsed file name from the url.
  - `maxRedirects`: Total # of redirects allowed before giving up downloading the file. Defaults to `5`.
+ - `downloadHeaders`: If supplied, these headers will be sent when downloading the file.
+ - `uploadHeaders`: If supplied, these headers will be sent when uploading the file.
+ - `headers`: If supplied, these headers will be sent for both downloading and uploading.
  - `downloadAgent`: Use your own http.Agent for downloading files. Defaults to the global agent.
  - `uploadAgent`: Use your own http.Agent for uploading files. Defaults to the global agent.
  - `agent`: If supplied, this value will use the same agent for both the downloadAgent and uploadAgent.
