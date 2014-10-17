@@ -3,7 +3,7 @@ var http = require('http');
 var assert = require('assert');
 var crypto = require('crypto');
 var formidable = require('formidable');
-
+var path = require('path');
 var server = http.createServer(function(req, res) {
   var md5hash = crypto.createHash('md5');
   var form = new formidable.IncomingForm();
@@ -33,7 +33,7 @@ var server = http.createServer(function(req, res) {
 
   form.onPart = function(part) {
     if (part.filename) {
-      file = part;    
+      file = part;
       part.on('data', function(buffer) {
         md5hash.update(buffer);
       });
@@ -59,7 +59,7 @@ var options = {
 //start listening
 server.listen(8080, function() {
   //upload remote file
-  poster.post('./file/43.gif', options, function(err, data) {
+  poster.post(__dirname + '/file/43.gif', options, function(err, data) {
     server.close();
     if (err) {
       throw new Error(err);

@@ -1,27 +1,28 @@
 {
-		"name": "poster",
-		"author": "Ryan French <frenchrya@gmail.com>",
-		"homepage": "",
-		"version": "0.0.7",
-		"description": "node.js module for streaming local/remote files over multipart.",
-		"keywords": [
-			"upload", 
-			"multipart",
-			"POST"
-		],
-		"devDependencies": {
-			"form-formidable": "0.1.x"
-		},
-		"repository": {
-				"type": "git",
-				"url": "git://github.com/rfrench/poster.git"
-		},
-		"directories": {
-				"lib": "lib"
-		},
-		"main": "./index",
-		"engines" : ["node >= 0.8.0"],
-		"scripts": {
-    	"test": "node test/run.js"
-    }
+  "name": "poster",
+  "author": "Ryan French <frenchrya@gmail.com>",
+  "homepage": "",
+  "version": "0.0.8",
+  "description": "node.js module for streaming local/remote files over multipart.",
+  "keywords": [
+    "upload", 
+    "multipart",
+    "POST"
+  ],
+  "devDependencies": {
+    "urun": "0.0.8",
+    "formidable": "0.1.x"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/rfrench/poster.git"
+  },
+  "directories": {
+      "lib": "lib"
+  },
+  "main": "./index",
+  "engines" : ["node >= 0.8.0"],
+  "scripts": {
+    "test": "node test/run.js"
+  }
 }
