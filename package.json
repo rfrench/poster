@@ -2,7 +2,7 @@
   "name": "poster",
   "author": "Ryan French <frenchrya@gmail.com>",
   "homepage": "",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "node.js module for streaming local/remote files over multipart.",
   "keywords": [
     "upload", 
